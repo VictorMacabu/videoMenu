@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet"/>
+    <title>YouVideo</title>
+    
+</head>
+<body>
+    <div class="geral">
+        <div class="container"><!-- armazenamento do video-->
+            <video class="video" id="video1" preload="auto" src="./video/Hong_Kong.mp4"></video>
+    
+            <div class="controle" >
+
+                <img class="boton"onclick="retroceder()" src="./imagens/circular-arrow-retroceder.svg">
+                <img class="boton" onclick="diminuirVel()"src="./imagens/velocidadeAbaixo.webp">
+                <img class="boton" id="playPause" onclick="played()" src="./imagens/play.svg">
+                <img class="boton" id="pausePlay" onclick="paused()" src="./imagens/pause.svg">
+                <img class="boton" onclick="aumentarVel()"src="./imagens/velocidadeAcima.svg">
+                <img class="boton" onclick="avancar()" src="./imagens/circular-arrow-avancar.svg">
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
